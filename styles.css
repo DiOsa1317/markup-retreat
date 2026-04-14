@@ -4,9 +4,11 @@
     width: 265px;
     margin: 0 auto;
 }
+/*скрыли ratio кнопки у прямых потомков */
 .rating-area > input {
     display: none;
 }
+
 .rating-area:not(:checked) > label {
     float: right;
     width: 42px;
@@ -19,6 +21,7 @@
 .rating-area:not(:checked) > label:before {
     content: '★';
 }
+/*выбираем заодно всё после */
 .rating-area > input:checked ~ label {
     color: gold;
 }
